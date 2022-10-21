@@ -1,0 +1,133 @@
+.accordion {
+	margin: 20px 0;
+	padding: 0;
+	border: 2px solid hsl(0deg 0% 52%);
+	border-radius: 7px;
+	width: 100%;
+}
+
+.accordion h3 {
+	margin: 0;
+	padding: 0;
+}
+
+.accordion:focus-within {
+	border-color: hsl(216deg 94% 43%);
+}
+
+.accordion:focus-within h3 {
+	background-color: hsl(0deg 0% 97%);
+}
+
+.accordion:focus-within h3 button {
+	color: #222 !important;
+}
+
+.accordion > * + * {
+	border-top: 1px solid hsl(0deg 0% 52%);
+}
+
+.accordion-trigger {
+	background: none;
+	color: #fff;
+	display: block;
+	font-size: 1.3rem;
+	font-weight: 700;
+	margin: 0;
+	padding: 1em 1.5em;
+	position: relative;
+	text-align: left;
+	width: 100%;
+	outline: none;
+	border-radius: 0;
+}
+
+.accordion-trigger:focus,
+.accordion-trigger:hover {
+	background: hsl(216deg 94% 94%);
+	color: #000;
+}
+
+.accordion-trigger:focus {
+	outline: 4px solid transparent;
+}
+
+.accordion > *:first-child .accordion-trigger,
+.accordion > *:first-child {
+	border-radius: 5px 5px 0 0;
+}
+
+.accordion > *:last-child .accordion-trigger,
+.accordion > *:last-child {
+	border-radius: 0 0 5px 5px;
+}
+
+button {
+	border-style: none;
+}
+
+.accordion button::-moz-focus-inner {
+	border: 0;
+}
+
+.accordion-title {
+	display: block;
+	pointer-events: none;
+	border: transparent 2px solid;
+	border-radius: 5px;
+	padding: 0.25em;
+	outline: none;
+}
+
+.accordion-trigger:focus .accordion-title {
+	border-color: hsl(216deg 94% 43%);
+}
+
+.accordion-trigger::after {
+	display: inline;
+	content: "";
+	border: solid currentcolor;
+	border-width: 0 2px 2px 0;
+	height: 0.5rem;
+	pointer-events: none;
+	position: absolute;
+	right: 2em;
+	top: 50%;
+	transform: translateY(-60%) rotate(45deg);
+	width: 0.5rem;
+	transition: transform 300ms;
+}
+
+.accordion-trigger:focus::after,
+.accordion-trigger:hover::after {
+	border-color: hsl(216deg 94% 43%);
+}
+
+.accordion-panel {
+	margin: 0;
+	padding: 1em 1.5em;
+	text-align: left;
+	transform: scaleY(1);
+	max-height: 999px;
+	transition: all 500ms;
+	overflow: hidden;
+	visibility: visible;
+}
+
+.accordion-trigger[aria-expanded="true"]::after {
+	transform: translateY(-50%) rotate(-135deg);
+}
+
+.accordion-panel[aria-hidden="true"] {
+	max-height: 0;
+	padding: 0 1.5em;
+	transform: scaleY(0);
+	visibility: hidden;
+}
+
+@media (prefers-reduced-motion) {
+	.accordion-panel,
+	.accordion-trigger::after {
+		transition: none;
+	}
+}
