@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-size: 110%;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    position: sticky;
+    padding: 20px;
+    color:  #ccc;
+}
+
+header a {
+    flex: 1;
+    max-width: 221px;
+    margin-right: 40px;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+h3,
+.h3 {
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+table {
+    max-width: 800px;
+    counter-reset: table-counter;
+}
+
+.ordinal::before {
+    display: inline;
+    counter-increment: table-counter;
+    content: counter(table-counter) ": ";
+}
+
+fieldset {
+    margin-bottom: 20px;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    padding: 20px;
+    width: 100%;
+}
+
+input[type="email"] {
+    margin-bottom: 20px;
+}
+
+.d-flex input {
+    width: calc(50% - 10px);
+}
+
+footer {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+}

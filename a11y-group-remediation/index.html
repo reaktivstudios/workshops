@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>-</title>
+  </head>
+  <body>
+    <header>
+      <a href="https://reaktiv.co">
+        <img src="./images/rkv-logo.png" />
+      </a>
+      <h1>Accessiblity Remediation Demo</h1>
+    </header>
+    <main>
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <h3 class="ordinal">Goals of this exercise</h3>
+            </td>
+            <td>
+              <ul>
+                <li>Get familiar with remediation reports</li>
+                <li>Discuss remediation techniques</li>
+                <li>Think about implications of changes to code</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td class="h3 ordinal">Steps to remediation</td>
+            <td>
+              <ul>
+                <li>Identify and understand the the objective</li>
+                <li>Find the elements that will need to be fixed</li>
+                <li>Apply only the required changes. Avoid scope creep.</li>
+                <li>Test the fix</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 class="ordinal">Form to nowhere</h2>
+            </td>
+            <td>
+              <form>
+                <p>This form submits to no where. In reality this is not a good thing, but for this exercise let's pretend it does.</p>
+                <fieldset>
+                  <legend>Name</legend>
+                  <div class="d-flex">
+                    <input placeholder="First" name="fname" id="fname" />
+                    <input placeholder="Last" name="lname" id="lname" />
+                  </div>
+                </fieldset>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="name@example.com" />
+                <input type="submit" value="Submit" tabindex="1" />
+              </form>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <footer>
+      <p>&copy;2022 - ReaktivStudios</p>
+    </footer>
+  </body>
+</html>
