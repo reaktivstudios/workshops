@@ -6,19 +6,20 @@
   import FocusOutline from './lib/FocusOutline.svelte';
     import AltText from './lib/AltText.svelte';
     import LinkText from './lib/LinkText.svelte';
+    import Landmarks from './lib/Landmarks.svelte';
 </script>
-
-<main>
-  <div>
-    <a href="https://reaktiv.co" aria-label="Go to ReaktivStudios site."> 
-      <img src={rkvLogo} class="logo logo__rkv" />
-      <!-- <img src={rkvLogo} class="logo logo__rkv" alt="ReaktivStudios Logo: Yellow stylized lighbulb representing bright ideas next to the text `Reaktiv Studios`." /> -->
-    </a>
-  </div>
+<div>
+  <a href="https://reaktiv.co" aria-label="Go to ReaktivStudios site."> 
+    <img src={rkvLogo} class="logo logo__rkv" />
+    <!-- <img src={rkvLogoDark} class="logo logo__rkv" alt="ReaktivStudios Logo: Yellow stylized lighbulb representing bright ideas next to the text `Reaktiv Studios`." /> -->
+  </a>
   <h1>Accessiblity Remediation Demo</h1>
-  <Contrast />
-  <TabOrder />
-  <FocusOutline />
+</div>
+<main>
   <AltText />
+  <Contrast />
+  <FocusOutline />
+  <Landmarks />
   <LinkText />
+  <TabOrder />
 </main>

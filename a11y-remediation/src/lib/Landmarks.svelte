@@ -1,5 +1,5 @@
-<section aria-labelledby="tab-order">
-    <h2 id="tab-order">Tab Order Issue</h2>
+<section aria-labelledby="landmarks">
+    <h2 id="landmarks">Landmarks Issue</h2>
     <table>
         <thead>
             <tr>
@@ -9,8 +9,8 @@
         </thead>
         <tbody>
             <tr>
-                <th scope="row">The button tab order is wrong</th>
-                <td>Move the HTML for the third button to the end of the list so that the tab order makes logical sense. Remove the order rule from the CSS.</td>
+                <th scope="row">The logo and page title are not in a landmark</th>
+                <td>Change the div to a <code>&lt;header&gt;</code>.</td>
             </tr>
         </tbody>
     </table>

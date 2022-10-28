@@ -84,3 +84,29 @@ button:focus-visible {
   max-width: 300px;
   height: auto;
 }
+
+main {
+  width: min(800px, 100%);
+  margin: 0 auto;
+}
+
+main section {
+  border: 1px solid #777;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+main table {
+  width: 100%;
+}
+main table tr :first-child {
+  width: 33%;
+}
+main table th,
+main table td {
+  text-align: left;
+}
+main code {
+  font-weight: 700;
+  font-style: italic;
+}
